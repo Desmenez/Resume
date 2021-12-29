@@ -1,0 +1,38 @@
+<header class="jumbotron subhead">
+    <h1>Crawling</h1>
+
+    <p class="lead">
+        It does not need to be tricky to get your AJAX site indexed correctly by
+        search engines.
+        <br/>
+        <br/>
+        Your site should be indexed as normal if you use HTML5 History.
+        <br/>
+        <br/>
+        If you use <code>#!/</code> your site can be indexed correctly if you
+        provide <code>?_escaped_fragment_=</code>-pages. These can be either generated on
+        the fly or using a tool that generates snapshots.
+        <a href="https://github.com/finnsson/crawlerjs/">Crawler.js</a> is a Node.js-CLI
+        that generates static snapshots of your site using PhantomJS. Read more about it
+        at Googles site about
+        <a href="https://developers.google.com/webmasters/ajax-crawling/">Making AJAX Applications Crawlable</a>.
+    </p>
+
+    <a target="_blank" href="?_escaped_fragment_=/misc/crawling">See the snapshot of this AJAX page.</a>.
+
+    <br/>
+    <br/>
+    <p class="lead">
+        <i class="label label-important">Update</i>
+        <br/>
+        Google <a target="_blank" href="https://webmasters.googleblog.com/2015/10/deprecating-our-ajax-crawling-scheme.html">officially deprecated</a>
+        their AJAX crawling scheme in 2015, telling _escaped_fragment_ URLs have become superfluous for them:
+        <br/>
+        <blockquote class="bg-info">
+            Instead of the _escaped_fragment_ URLs, we'll generally crawl, render, and index the #! URLs.
+            [...]
+            If you're building a new site or restructuring an already existing site, simply avoid introducing _escaped_fragment_ urls.
+        </blockquote>
+    </p>
+</header>
+

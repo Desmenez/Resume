@@ -1,0 +1,168 @@
+@font-face {
+    font-family: 'Fellbaum Grotesk';
+    src: url('FellbaumGrotesk-Black.eot');
+    src: local('Fellbaum Grotesk Black'), local('FellbaumGrotesk-Black'),
+        url('FellbaumGrotesk-Black.eot?#iefix') format('embedded-opentype'),
+        url('FellbaumGrotesk-Black.woff2') format('woff2'),
+        url('FellbaumGrotesk-Black.woff') format('woff'),
+        url('FellbaumGrotesk-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Fellbaum Grotesk';
+    src: url('FellbaumGrotesk-BlackItalic.eot');
+    src: local('Fellbaum Grotesk Black Italic'), local('FellbaumGrotesk-BlackItalic'),
+        url('FellbaumGrotesk-BlackItalic.eot?#iefix') format('embedded-opentype'),
+        url('FellbaumGrotesk-BlackItalic.woff2') format('woff2'),
+        url('FellbaumGrotesk-BlackItalic.woff') format('woff'),
+        url('FellbaumGrotesk-BlackItalic.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Fellbaum Grotesk';
+    src: url('FellbaumGrotesk-BoldItalic.eot');
+    src: local('Fellbaum Grotesk Bold Italic'), local('FellbaumGrotesk-BoldItalic'),
+        url('FellbaumGrotesk-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('FellbaumGrotesk-BoldItalic.woff2') format('woff2'),
+        url('FellbaumGrotesk-BoldItalic.woff') format('woff'),
+        url('FellbaumGrotesk-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Fellbaum Grotesk';
+    src: url('FellbaumGrotesk-MediumItalic.eot');
+    src: local('Fellbaum Grotesk Medium Italic'), local('FellbaumGrotesk-MediumItalic'),
+        url('FellbaumGrotesk-MediumItalic.eot?#iefix') format('embedded-opentype'),
+        url('FellbaumGrotesk-MediumItalic.woff2') format('woff2'),
+        url('FellbaumGrotesk-MediumItalic.woff') format('woff'),
+        url('FellbaumGrotesk-MediumItalic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Fellbaum Grotesk Roman';
+    src: url('FellbaumGrotesk-RomanItalic.eot');
+    src: local('Fellbaum Grotesk Roman Italic'), local('FellbaumGrotesk-RomanItalic'),
+        url('FellbaumGrotesk-RomanItalic.eot?#iefix') format('embedded-opentype'),
+        url('FellbaumGrotesk-RomanItalic.woff2') format('woff2'),
+        url('FellbaumGrotesk-RomanItalic.woff') format('woff'),
+        url('FellbaumGrotesk-RomanItalic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Fellbaum Grotesk';
+    src: url('FellbaumGrotesk-ThinItalic.eot');
+    src: local('Fellbaum Grotesk Thin Italic'), local('FellbaumGrotesk-ThinItalic'),
+        url('FellbaumGrotesk-ThinItalic.eot?#iefix') format('embedded-opentype'),
+        url('FellbaumGrotesk-ThinItalic.woff2') format('woff2'),
+        url('FellbaumGrotesk-ThinItalic.woff') format('woff'),
+        url('FellbaumGrotesk-ThinItalic.ttf') format('truetype');
+    font-weight: 100;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Fellbaum Grotesk';
+    src: url('FellbaumGrotesk-LightItalic.eot');
+    src: local('Fellbaum Grotesk Light Italic'), local('FellbaumGrotesk-LightItalic'),
+        url('FellbaumGrotesk-LightItalic.eot?#iefix') format('embedded-opentype'),
+        url('FellbaumGrotesk-LightItalic.woff2') format('woff2'),
+        url('FellbaumGrotesk-LightItalic.woff') format('woff'),
+        url('FellbaumGrotesk-LightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Fellbaum Grotesk';
+    src: url('FellbaumGrotesk-Light.eot');
+    src: local('Fellbaum Grotesk Light'), local('FellbaumGrotesk-Light'),
+        url('FellbaumGrotesk-Light.eot?#iefix') format('embedded-opentype'),
+        url('FellbaumGrotesk-Light.woff2') format('woff2'),
+        url('FellbaumGrotesk-Light.woff') format('woff'),
+        url('FellbaumGrotesk-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Fellbaum Grotesk';
+    src: url('FellbaumGrotesk-Heavy.eot');
+    src: local('Fellbaum Grotesk Heavy'), local('FellbaumGrotesk-Heavy'),
+        url('FellbaumGrotesk-Heavy.eot?#iefix') format('embedded-opentype'),
+        url('FellbaumGrotesk-Heavy.woff2') format('woff2'),
+        url('FellbaumGrotesk-Heavy.woff') format('woff'),
+        url('FellbaumGrotesk-Heavy.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Fellbaum Grotesk';
+    src: url('FellbaumGrotesk-Bold.eot');
+    src: local('Fellbaum Grotesk Bold'), local('FellbaumGrotesk-Bold'),
+        url('FellbaumGrotesk-Bold.eot?#iefix') format('embedded-opentype'),
+        url('FellbaumGrotesk-Bold.woff2') format('woff2'),
+        url('FellbaumGrotesk-Bold.woff') format('woff'),
+        url('FellbaumGrotesk-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Fellbaum Grotesk';
+    src: url('FellbaumGrotesk-Medium.eot');
+    src: local('Fellbaum Grotesk Medium'), local('FellbaumGrotesk-Medium'),
+        url('FellbaumGrotesk-Medium.eot?#iefix') format('embedded-opentype'),
+        url('FellbaumGrotesk-Medium.woff2') format('woff2'),
+        url('FellbaumGrotesk-Medium.woff') format('woff'),
+        url('FellbaumGrotesk-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Fellbaum Grotesk';
+    src: url('FellbaumGrotesk-HeavyItalic.eot');
+    src: local('Fellbaum Grotesk Heavy Italic'), local('FellbaumGrotesk-HeavyItalic'),
+        url('FellbaumGrotesk-HeavyItalic.eot?#iefix') format('embedded-opentype'),
+        url('FellbaumGrotesk-HeavyItalic.woff2') format('woff2'),
+        url('FellbaumGrotesk-HeavyItalic.woff') format('woff'),
+        url('FellbaumGrotesk-HeavyItalic.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Fellbaum Grotesk Roman';
+    src: url('FellbaumGrotesk-Roman.eot');
+    src: local('Fellbaum Grotesk Roman'), local('FellbaumGrotesk-Roman'),
+        url('FellbaumGrotesk-Roman.eot?#iefix') format('embedded-opentype'),
+        url('FellbaumGrotesk-Roman.woff2') format('woff2'),
+        url('FellbaumGrotesk-Roman.woff') format('woff'),
+        url('FellbaumGrotesk-Roman.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Fellbaum Grotesk';
+    src: url('FellbaumGrotesk-Thin.eot');
+    src: local('Fellbaum Grotesk Thin'), local('FellbaumGrotesk-Thin'),
+        url('FellbaumGrotesk-Thin.eot?#iefix') format('embedded-opentype'),
+        url('FellbaumGrotesk-Thin.woff2') format('woff2'),
+        url('FellbaumGrotesk-Thin.woff') format('woff'),
+        url('FellbaumGrotesk-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+

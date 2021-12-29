@@ -1,0 +1,46 @@
+body > .container > .row > .span9 > div {
+    display: none;
+}
+
+.code-large {
+    font-size: 20px;
+    font-weight: normal;
+    background-color: transparent;
+    border: none;
+}
+
+.p {
+}
+
+footer {
+    padding: 100px 0;
+    margin-top: 100px;
+    border-top: 1px solid #E5E5E5;
+    background-color: whiteSmoke;
+}
+
+footer .pagination ul {
+    background-color: #fff;
+}
+
+.dropdown-menu {
+    max-height: 300px;
+    overflow-y: scroll;
+}
+
+a .atv {
+    text-decoration: underline;
+}
+
+.prettyprint a {
+    text-decoration: underline;
+}
+
+h1, h2, h3 {
+    font-family: 'PT Sans', sans-serif;
+    font-weight: normal;
+}
+
+h1 {
+    padding-top: 20px;
+}

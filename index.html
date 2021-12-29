@@ -1,0 +1,1108 @@
+﻿<!DOCTYPE html>
+<html lang="eng">
+  <head>
+    <meta charset="utf-8" />
+    <title>Portfolio | Napatpon</title>
+    <meta
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+      name="viewport"
+    />
+    <!-- style start -->
+    <!-- <link href="css/plugins.css" media="all" rel="stylesheet" type="text/css" /> -->
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <!-- Animate on scoll -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- Social Icons -->
+    <link href="css/ionicons.min.css" rel="stylesheet" type="text/css" />
+    <!-- Photoswipe -->
+    <link href="css/photoswipe.css" rel="stylesheet" type="text/css" />
+    <!-- Litty -->
+    <!-- <link href="css/lity.min.css" rel="stylesheet" type="text/css" /> -->
+    <!-- Qwl-carousel -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="css/owl.theme.default.min.css" />
+    <!-- Main CSS -->
+    <link
+      href="css/style-DARK.css"
+      media="all"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <!-- Favicons -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="favicon/favicon-32x32.png"
+    />
+  </head>
+
+  <body>
+    <!-- Preloader -->
+    <div id="preloader">
+      <div id="preloader-status">
+        <div class="preloader-position loader">
+          <span></span>
+        </div>
+      </div>
+    </div>
+    <div class="preloader-after">
+      <div class="preloader-after-inner"></div>
+    </div>
+
+    <!-- MAIN HOME -->
+    <div class="left-side-home" id="home">
+      <!-- Logo มุมซ้าย -->
+      <div class="header">
+        <div class="logo"></div>
+      </div>
+
+      <!-- HOME Typed text -->
+      <div class="center-container-home">
+        <div class="center-block-home">
+          <div class="introduction">
+            <h3>Hello! I'am</h3>
+
+            <!-- typing effect -->
+            <h1 class="typed-effect">
+              <span class="typed-title"></span>
+            </h1>
+          </div>
+        </div>
+      </div>
+
+      <!-- Social icons -->
+      <div class="social-icons-home-wrapper">
+        <ul class="social-icons-home">
+          <li class="social-icon">
+            <a href="mailto:napatpon.tanmanee@mail.kmtt.ac.th" target="_blank"
+              ><ion-icon name="logo-google"></ion-icon
+            ></a>
+          </li>
+          <li class="social-icon">
+            <a href="https://www.facebook.com/napatpon.tanmanee" target="_blank"
+              ><ion-icon name="logo-facebook"></ion-icon
+            ></a>
+          </li>
+          <li class="social-icon">
+            <a
+              href="https://www.youtube.com/channel/UCJ0K-8uZelz3l7m8FHOqGDA"
+              target="_blank"
+              ><ion-icon name="logo-youtube"></ion-icon
+            ></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- RightSide Images -->
+    <div class="right-side">
+      <!-- <div class="container">
+        <img class="png-img" alt="png-main" src="img/background/Tony.png" />
+        <div class="copyright-home">P<br />R<br />E</div>
+        \
+      </div> -->
+      <!-- Section Home Video BG -->
+      <div class="home-img-container overlay overlay-dark-60">
+        <div class="slide-img">
+          <!-- <img alt="Main BG" src="img/background/SINGLE-bg.jpg" /> -->
+          <!-- <img class="png-img" alt="png-main" src="img/background/Tony.png" /> -->
+          <div id="particles-js"></div>
+          <video
+            alt="Main BG"
+            src="img/video_home.mp4"
+            loop
+            muted
+            autoplay
+          ></video>
+        </div>
+      </div>
+
+      <!-- Section About BG -->
+      <div class="about-img-container mobile overlay overlay-dark-60">
+        <div class="slide-img">
+          <img alt="BG Img" src="img/background/section-intro-bg.jpg" />
+        </div>
+      </div>
+
+      <!-- Section Timeline BG -->
+      <div class="works-img-container mobile overlay overlay-dark-60">
+        <div class="slide-img">
+          <img alt="BG Img" src="img/background/section-timeline-bg.jpg" />
+        </div>
+      </div>
+
+      <!-- Section Skill BG -->
+      <div class="services-img-container mobile overlay overlay-dark-60">
+        <div class="slide-img">
+          <img alt="BG Img" src="img/background/section-skills-bg.jpg" />
+        </div>
+      </div>
+
+      <!-- Section Portfolio BG -->
+      <div class="news-img-container mobile overlay overlay-dark-60">
+        <div class="slide-img">
+          <!-- 3D Model -->
+          <div id="particles-snow"></div>
+          <model-viewer
+            id="model-viewer"
+            bounds="tight"
+            src="model/ChristmasBall.glb"
+            ar
+            ar-modes="webxr scene-viewer quick-look"
+            camera-controls
+            poster="poster.webp"
+            shadow-intensity="1"
+            exposure="2"
+            environment-image="kloppenheim_02_1k.hdr"
+            auto-rotate
+            alt="christmasball"
+            loading="lazy"
+          >
+            <button
+              class="Hotspot btn btn-dark"
+              slot="hotspot-2"
+              data-position="0.027310902706243884m 1.7600382160513242m 12.099479309551171m"
+              data-normal="0m 0.4878092709917905m 0.8729502363448092m"
+              data-visibility-attribute="visible"
+            >
+              <div class="HotspotAnnotation font-albertus">Merry Christmas</div>
+            </button>
+            <div class="progress-bar hide" slot="progress-bar">
+              <div class="update-bar"></div>
+            </div>
+          </model-viewer>
+          <img
+            alt="BG Img"
+            style="filter: blur(2px); -webkit-filter: blur(8px)"
+            src="img/background/section-portfolio-bg.jpg"
+          />
+        </div>
+      </div>
+
+      <!-- Section Contact BG -->
+      <div class="contact-img-container mobile overlay overlay-dark-60">
+        <div class="slide-img">
+          <img alt="BG Img" src="img/background/section-contact-bg.jpg" />
+        </div>
+      </div>
+    </div>
+
+    <!-- LeftSide Contents & Images Mobile -->
+    <section class="fireOT">
+      <div class="divider-l"></div>
+
+      <!-- Section Introduction -->
+      <div class="fireOT-left left-side" id="about">
+        <div class="container">
+          <!-- Introduction Header -->
+          <div class="section-subheading-wrapper-all">
+            <h2 class="section-subheading" data-aos="fade-up">
+              <span>About me</span>
+            </h2>
+            <div class="divider-s"></div>
+            <h2 class="home-page-title-all" data-aos="fade-up">Introduction</h2>
+          </div>
+          <div class="divider-m"></div>
+          <div class="txt" data-aos="fade-up">
+            <p>
+              Hello I'm Napatpon. My ambition is to be a Front-End Developer. I
+              have the ability to do animation and 3d modeling. So I'm
+              interested in bringing these two things to integrate into the
+              website, even though I lack experience But I always have the
+              effort and ability to learn new things.
+            </p>
+          </div>
+          <div class="divider-s"></div>
+          <div class="my-sign" data-aos="anim-sign" data-aos-duration="3000">
+            <svg
+              width="204"
+              height="210"
+              viewBox="0 0 547.78 299.44"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                id="mySignature"
+                d="M670.31,701.26s55.27-283,121.36-281.86c79.4,1.39-24.08,252.75-24.08,252.75s291.27-139.95,394-105.7S797.46,676,797.46,676s35.54-148,83-163.15c38.3-12.26,12,82,12,82S906.92,504,946,496c46.12-9.45,9.89,79,9.89,79s85.24-13.58,55.27-55.32c-24.61-34.28-35-25.24-35-25.24l87.75-23.36s-45.87,99-22.58,81.11,38.76-59.32,38.76-59.32-9.71,54.33,5.36,52.86c12-1.18,26.85-52.83,32.32-73.52a21,21,0,0,1,10.24-13.2c4.43-2.39,62.78-30.95,54.9,10.89-8.19,43.45-24.39,72.76-24.39,72.76s3.07-82-46.52,1.17"
+                transform="translate(-665.81 -406.32)"
+              />
+              <path
+                id="mySignature"
+                d="M879.42,439.3s-57.16,63.26-17.62,58.21C956.2,485.45,1228.36,407,1208,411"
+                transform="translate(-665.81 -406.32)"
+              />
+            </svg>
+          </div>
+
+          <div class="divider-s"></div>
+
+          <!-- ข้อมูลทั่วไป -->
+          <div class="specific-information">
+            <div class="txt" data-aos="fade-up">
+              <table>
+                <tbody>
+                  <tr>
+                    <th>NAME</th>
+                    <th>Napatpon Tanmanee</th>
+                  </tr>
+                </tbody>
+                <tbody>
+                  <tr>
+                    <th>AGE</th>
+                    <th>22</th>
+                  </tr>
+                </tbody>
+                <tbody>
+                  <tr>
+                    <th>BIRTHDAY</th>
+                    <th>14 June 1999</th>
+                  </tr>
+                </tbody>
+                <tbody>
+                  <tr>
+                    <th>PHONE</th>
+                    <th>0939397952</th>
+                  </tr>
+                </tbody>
+                <tbody>
+                  <tr>
+                    <th>E-mail</th>
+                    <th style="text-transform: lowercase">gobpk03@gmail.com</th>
+                  </tr>
+                </tbody>
+                <tbody>
+                  <tr>
+                    <th>ADDRESS</th>
+                    <th>
+                      40 Soi Prachautid 54 Road, Tungkru District, Bangkok 10140
+                    </th>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="divider-s"></div>
+            <form method="get" action="/untitled.blend" data-aos="fade-up">
+              <button type="submit" class="btn btn-cv">
+                <ion-icon name="download-outline"></ion-icon>DOWNLOAD RESUME
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div class="divider-m visible-mobile-devices"></div>
+      <div class="divider-xl invisible-mobile-devices"></div>
+
+      <!-- Image RightSide Mobile -->
+      <!-- <div class="fireOT-right">
+        <div class="about-img-container overlay overlay-dark-60">
+          <div class="slide-img">
+            <img src="img/background/section-intro-bg.jpg" alt="BG Img" />
+          </div>
+        </div>        
+      </div> -->
+
+      <div class="fireOT-right overlay overlay-dark-60 jarallax" data-jarallax>
+        <img
+          class="jarallax-img"
+          src="img/background/section-intro-bg.jpg"
+          alt="BG-image"
+        />
+      </div>
+
+      <div class="divider-xl visible-mobile-devices"></div>
+
+      <!-- Timeline Section-->
+      <div class="fireOT-left left-side" id="works">
+        <div class="container">
+          <!-- Timeline Header -->
+          <div class="section-subheading-wrapper-all">
+            <h2 class="section-subheading" data-aos="fade-up">
+              <span>Timeline</span>
+            </h2>
+            <div class="divider-s"></div>
+            <h2 class="home-page-title-all" data-aos="fade-up">
+              Education & Experience
+            </h2>
+          </div>
+
+          <div class="divider-m"></div>
+
+          <!-- Timeline -->
+          <div class="row">
+            <div class="col-lg-12">
+              <ul class="timeline">
+                <!-- KMUTT Timeline -->
+                <li class="timeline-inverted">
+                  <div class="timeline-image" data-aos="flip-up">
+                    <img
+                      alt="Timeline"
+                      class="img-circle img-responsive"
+                      src="img/timeline/KMUTT.png"
+                    />
+                  </div>
+                  <div class="timeline-panel">
+                    <div class="timeline-heading">
+                      <h4 class="cd-timeline-date" data-aos="fade-up">
+                        2017 - Present
+                      </h4>
+                      <div class="divider-s"></div>
+                      <h3 class="cd-timeline-name" data-aos="fade-up">
+                        Bachelor's degree at KMUTT<br />
+                        <span
+                          >( King Mongkut's University of Technology Thonburi
+                          )</span
+                        >
+                      </h3>
+                      <div class="divider-s visible-mobile-devices"></div>
+                      <div class="divider-m invisible-mobile-devices"></div>
+                    </div>
+                    <div class="timeline-body" data-aos="fade-up">
+                      <p>
+                        Graduated Bachelor degree from Faculty of Computer
+                        Engineering, GPA 3.30
+                      </p>
+                    </div>
+                  </div>
+                </li>
+
+                <!-- 8Bath Timeline -->
+                <li class="timeline-inverted">
+                  <div class="timeline-image" data-aos="flip-up">
+                    <img
+                      alt="Timeline"
+                      class="img-circle img-responsive"
+                      src="img/timeline/8baht.png"
+                    />
+                  </div>
+                  <div class="timeline-panel">
+                    <div class="timeline-heading">
+                      <h4 class="cd-timeline-date" data-aos="fade-up">
+                        May 2020 - June 2020
+                      </h4>
+                      <div class="divider-s"></div>
+                      <h3 class="cd-timeline-name" data-aos="fade-up">
+                        Internship at 8baht.com
+                      </h3>
+                      <div class="divider-s visible-mobile-devices"></div>
+                      <div class="divider-m invisible-mobile-devices"></div>
+                    </div>
+                    <div class="timeline-body" data-aos="fade-up">
+                      <p>
+                        Viewing and managing the website. Learn how to use
+                        Wordpress and Wordpress plugins.
+                      </p>
+                    </div>
+                  </div>
+                </li>
+
+                <!-- BPK Timeline -->
+                <li class="timeline-inverted">
+                  <div class="timeline-image" data-aos="flip-up">
+                    <img
+                      alt="Timeline"
+                      class="img-circle img-responsive"
+                      src="img/timeline/BPK.png"
+                    />
+                  </div>
+                  <div class="timeline-panel timeline-panel-last">
+                    <div class="timeline-heading">
+                      <h4 class="cd-timeline-date" data-aos="fade-up">
+                        2014 - 2016
+                      </h4>
+                      <div class="divider-s"></div>
+                      <h3 class="cd-timeline-name" data-aos="fade-up">
+                        Studied high school at BPK<br />
+                        <span>( Bangpakok Wittayakom School )</span>
+                      </h3>
+                      <div class="divider-s visible-mobile-devices"></div>
+                      <div class="divider-m invisible-mobile-devices"></div>
+                    </div>
+                    <div class="timeline-body" data-aos="fade-up">
+                      <p>
+                        Graduated from Science-Mathematics Programs with a 3.51
+                        GPA
+                      </p>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="divider-m visible-mobile-devices"></div>
+      <div class="divider-xl invisible-mobile-devices"></div>
+
+      <!-- Image RightSide Mobile -->
+      <div class="fireOT-right overlay overlay-dark-60 jarallax" data-jarallax>
+        <img
+          class="jarallax-img"
+          src="img/background/section-timeline-bg.jpg"
+          alt="BG-image"
+        />
+      </div>
+
+      <div class="divider-xl visible-mobile-devices"></div>
+
+      <!-- Skills Section -->
+      <div class="fireOT-left left-side" id="services">
+        <div class="container">
+          <!-- Skills Header -->
+          <div class="section-subheading-wrapper-all">
+            <h2 class="section-subheading" data-aos="fade-up">
+              <span>What have I used?</span>
+            </h2>
+            <div class="divider-s"></div>
+            <h2 class="home-page-title-all" data-aos="fade-up">
+              Skills & Expertise
+            </h2>
+          </div>
+
+          <div class="divider-s visible-mobile-devices"></div>
+          <div class="divider-m invisible-mobile-devices"></div>
+
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="panel-wrapper">
+                <div
+                  class="panel-group"
+                  id="accordion"
+                  role="tablist"
+                  aria-multiselectable="true"
+                >
+                  <!-- programming languages -->
+                  <div class="panel panel-default">
+                    <div class="panel-heading" id="headingOne" role="tab">
+                      <h4 class="panel-title">
+                        <a
+                          data-bs-toggle="collapse"
+                          href="#collapseOne"
+                          role="button"
+                          aria-expanded="false"
+                          aria-controls="collapseOne"
+                          class="collapsed"
+                        >
+                          <i class="ion ion-plus" data-aos="fade-up"></i>
+                          <span class="panel-title" data-aos="fade-up">
+                            Programming Languages
+                          </span>
+                        </a>
+                      </h4>
+                    </div>
+
+                    <div
+                      class="collapse"
+                      id="collapseOne"
+                      role="tabpanel"
+                      data-bs-parent="#accordion"
+                      aria-labelledby="headingOne"
+                    >
+                      <div class="divider-s"></div>
+                      <div class="row row-cols-4 row-cols-xl-6 gy-4">
+                        <div class="col">
+                          <img
+                            class="skill-img"
+                            src="img/skill icons/C_Programming_Language.svg"
+                            alt="software-icon"
+                          />
+                        </div>
+                        <div class="col">
+                          <img
+                            class="skill-img"
+                            src="img/skill icons/python-5.svg"
+                            alt="software-icon"
+                          />
+                        </div>
+                        <div class="col">
+                          <img
+                            class="skill-img"
+                            src="img/skill icons/r-lang.svg"
+                            alt="software-icon"
+                          />
+                        </div>
+                        <div class="col">
+                          <img
+                            class="skill-img"
+                            src="img/skill icons/html-1.svg"
+                            alt="software-icon"
+                          />
+                        </div>
+                        <div class="col">
+                          <img
+                            class="skill-img"
+                            src="img/skill icons/css-3.svg"
+                            alt="software-icon"
+                          />
+                        </div>
+                        <div class="col">
+                          <img
+                            class="skill-img"
+                            src="img/skill icons/javascript-1.svg"
+                            alt="software-icon"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="divider-s visible-mobile-devices"></div>
+                  <div class="divider-m invisible-mobile-devices"></div>
+
+                  <!-- softwares -->
+                  <div class="panel panel-default">
+                    <div class="panel-heading" id="headingTwo" role="tab">
+                      <h4 class="panel-title">
+                        <a
+                          data-bs-toggle="collapse"
+                          href="#collapseTwo"
+                          role="button"
+                          aria-expanded="false"
+                          aria-controls="collapseTwo"
+                          class="collapsed"
+                        >
+                          <i class="ion ion-plus" data-aos="fade-up"></i>
+                          <span class="panel-title" data-aos="fade-up">
+                            Softwares
+                          </span>
+                        </a>
+                      </h4>
+                    </div>
+
+                    <div
+                      class="collapse"
+                      id="collapseTwo"
+                      role="tabpanel"
+                      data-bs-parent="#accordion"
+                      aria-labelledby="headingTwo"
+                    >
+                      <div class="divider-s"></div>
+                      <div class="row row-cols-4 row-cols-xl-8 gy-4">
+                        <div class="col">
+                          <img
+                            class="skill-img"
+                            src="img/skill icons/photoshop.png"
+                            alt="software-icon"
+                          />
+                        </div>
+                        <div class="col">
+                          <img
+                            class="skill-img"
+                            src="img/skill icons/illustrator.png"
+                            alt="software-icon"
+                          />
+                        </div>
+                        <div class="col">
+                          <img
+                            class="skill-img"
+                            src="img/skill icons/premiere.png"
+                            alt="software-icon"
+                          />
+                        </div>
+                        <div class="col">
+                          <img
+                            class="skill-img"
+                            src="img/skill icons/after-effects.png"
+                            alt="software-icon"
+                          />
+                        </div>
+                        <div class="col">
+                          <img
+                            class="skill-img"
+                            src="img/skill icons/xd.png"
+                            alt="software-icon"
+                          />
+                        </div>
+                        <div class="col">
+                          <img
+                            class="skill-img"
+                            src="img/skill icons/figma.png"
+                            alt="software-icon"
+                          />
+                        </div>
+                        <div class="col">
+                          <img
+                            class="skill-img"
+                            src="img/skill icons/blender.svg"
+                            alt="software-icon"
+                          />
+                        </div>
+                        <div class="col">
+                          <img
+                            class="skill-img"
+                            src="img/skill icons/sfm_logo.svg"
+                            alt="software-icon"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="divider-s visible-mobile-devices"></div>
+                  <div class="divider-m invisible-mobile-devices"></div>
+
+                  <!-- libraries -->
+                  <div class="panel panel-default">
+                    <div class="panel-heading" id="headingThree" role="tab">
+                      <h4 class="panel-title">
+                        <a
+                          data-bs-toggle="collapse"
+                          href="#collapseThree"
+                          role="button"
+                          aria-expanded="false"
+                          aria-controls="collapseThree"
+                          class="collapsed"
+                        >
+                          <i class="ion ion-plus" data-aos="fade-up"></i>
+                          <span class="panel-title" data-aos="fade-up">
+                            Libraries
+                          </span>
+                        </a>
+                      </h4>
+                    </div>
+
+                    <div
+                      class="collapse"
+                      id="collapseThree"
+                      role="tabpanel"
+                      data-bs-parent="#accordion"
+                      aria-labelledby="headingThree"
+                    >
+                      <div class="divider-s"></div>
+                      <div class="row row-cols-4">
+                        <div class="col">
+                          <img
+                            class="skill-img"
+                            src="img/skill icons/react-1.svg"
+                            alt="software-icon"
+                          />
+                        </div>
+                        <div class="col">
+                          <img
+                            class="skill-img"
+                            src="img/skill icons/vuejs-logo.svg"
+                            alt="software-icon"
+                          />
+                        </div>
+                        <div class="col">
+                          <img
+                            class="skill-img"
+                            src="img/skill icons/bootstrap-5-1.svg"
+                            alt="software-icon"
+                          />
+                        </div>
+                        <div class="col">
+                          <img
+                            class="skill-img"
+                            src="img/skill icons/Threejs-logo.svg"
+                            alt="software-icon"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="divider-m visible-mobile-devices"></div>
+      <div class="divider-xl invisible-mobile-devices"></div>
+
+      <!-- Image RightSide Mobile -->
+      <div class="fireOT-right overlay overlay-dark-60 jarallax" data-jarallax>
+        <img
+          class="jarallax-img"
+          src="img/background/section-skills-bg.jpg"
+          alt="BG-image"
+        />
+      </div>
+
+      <div class="divider-xl visible-mobile-devices"></div>
+
+      <!-- Portfolio Section-->
+      <div class="fireOT-left left-side" id="portfolio">
+        <div class="container">
+          <!-- Portfolio Header -->
+          <div class="section-subheading-wrapper-all">
+            <h2 class="section-subheading" data-aos="fade-up">
+              <span>It's showtime</span>
+            </h2>
+            <div class="divider-s"></div>
+            <h2 class="home-page-title-all" data-aos="fade-up">Portfolio</h2>
+          </div>
+          <div class="divider-m"></div>
+
+          <!-- Portfolio Carousel -->
+          <div class="row">
+            <div class="col-lg-12">
+              <div
+                class="owl-carousel"
+                id="owl-carousel-news"
+                data-aos="fade-up"
+              >
+                <!-- Portfolio 1 -->
+                <div class="news-item">
+                  <div class="news-bg-wrapper port-bg-1">
+                    <div class="news-item-inner">
+                      <div class="divider-s"></div>
+                      <div class="news-info-date" style="padding-bottom: 10px">
+                        October 2017
+                      </div>
+                      <div class="news-info-title">Adisorn Game</div>
+                      <div class="divider-s"></div>
+                      <div class="news-info-des">
+                        Coding and design turn-base RPG game project using
+                        Unity.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Portfolio 2 -->
+                <div class="news-item">
+                  <div class="news-bg-wrapper port-bg-2">
+                    <div class="news-item-inner">
+                      <div class="divider-s"></div>
+                      <div class="news-info-date" style="padding-bottom: 10px">
+                        February 2019
+                      </div>
+                      <div class="news-info-title">
+                        Delivery Food Application
+                      </div>
+                      <div class="divider-s"></div>
+                      <div class="news-info-des">
+                        Front-end and design a food delivery website page using
+                        Vue.js.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Portfolio 3 -->
+                <div class="news-item">
+                  <div class="news-bg-wrapper port-bg-3">
+                    <div class="news-item-inner">
+                      <div class="divider-s"></div>
+                      <div class="news-info-date" style="padding-bottom: 10px">
+                        March 2020
+                      </div>
+                      <div class="news-info-title">PTT Application</div>
+                      <div class="divider-s"></div>
+                      <div class="news-info-des">
+                        Design an application to collect points and redeem
+                        rewards using Figma.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Portfolio 4 -->
+                <div class="news-item">
+                  <div class="news-bg-wrapper port-bg-4">
+                    <div class="news-item-inner">
+                      <div class="divider-s"></div>
+                      <div class="news-info-date" style="padding-bottom: 10px">
+                        October 2020
+                      </div>
+                      <div class="news-info-title">KMUTT Map Application</div>
+                      <div class="divider-s"></div>
+                      <div class="news-info-des">
+                        Design an applications to navigate to various locations
+                        within the university using Figma.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Portfolio 5 -->
+                <div class="news-item">
+                  <div class="news-bg-wrapper port-bg-5">
+                    <div class="news-item-inner">
+                      <div class="divider-s"></div>
+                      <div class="news-info-date" style="padding-bottom: 10px">
+                        March 2021
+                      </div>
+                      <div class="news-info-title">Open-BCI Project</div>
+                      <div class="divider-s"></div>
+                      <div class="news-info-des">
+                        EEG classification project to control robots through
+                        motor imaginary.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Portfolio 6 -->
+                <div class="news-item">
+                  <a
+                    href="https://sketchfab.com/3d-models/pinocchio-and-memory-inside-the-bubble-d834208cb6b24e87975b985729d4fa63"
+                    target="_blank"
+                  >
+                    <div class="news-bg-wrapper port-bg-6">
+                      <div class="news-item-inner">
+                        <div class="divider-s"></div>
+                        <div
+                          class="news-info-date"
+                          style="padding-bottom: 10px"
+                        >
+                          June 2021
+                        </div>
+                        <div class="news-info-title">Sketchfab Model</div>
+                        <div class="divider-s"></div>
+                        <div class="news-info-des">
+                          3D model on the sketchfab website
+                        </div>
+                      </div>
+                    </div></a
+                  >
+                </div>
+                <!-- Portfolio 7 -->
+                <div class="news-item">
+                  <a
+                    href="https://www.youtube.com/watch?v=8ozLMKDbZ-k&ab_channel=EMPTYAnimeto"
+                  >
+                    <div class="news-bg-wrapper port-bg-7">
+                      <div class="news-item-inner">
+                        <div class="divider-s"></div>
+                        <div
+                          class="news-info-date"
+                          style="padding-bottom: 10px"
+                        >
+                          2021
+                        </div>
+                        <div class="news-info-title">Animation Project</div>
+                        <div class="divider-s"></div>
+                        <div class="news-info-des">
+                          Animation project in my youtube channel
+                        </div>
+                      </div>
+                    </div></a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="divider-m visible-mobile-devices"></div>
+      <div class="divider-xl invisible-mobile-devices"></div>
+
+      <!-- Image RightSide Mobile -->
+      <div class="fireOT-right overlay overlay-dark-60 jarallax" data-jarallax>
+        <div id="particles-snow"></div>
+        <model-viewer
+          id="model-viewer"
+          bounds="tight"
+          src="model/ChristmasBall.glb"
+          ar
+          ar-modes="webxr scene-viewer quick-look"
+          camera-controls
+          poster="poster.webp"
+          shadow-intensity="1"
+          exposure="2"
+          environment-image="kloppenheim_02_1k.hdr"
+          auto-rotate
+          alt="christmasball"
+          loading="lazy"
+        >
+          <button
+            class="Hotspot btn btn-dark"
+            slot="hotspot-2"
+            data-position="0.027310902706243884m 1.7600382160513242m 12.099479309551171m"
+            data-normal="0m 0.4878092709917905m 0.8729502363448092m"
+            data-visibility-attribute="visible"
+          >
+            <div class="HotspotAnnotation font-albertus">Merry Christmas</div>
+          </button>
+          <div class="progress-bar hide" slot="progress-bar">
+            <div class="update-bar"></div>
+          </div>
+        </model-viewer>
+        <img
+          class="jarallax-img"
+          src="img/background/section-portfolio-bg.jpg"
+          alt="BG-image"
+        />
+      </div>
+
+      <div class="divider-xl visible-mobile-devices"></div>
+
+      <!-- Contact Section -->
+      <div class="fireOT-left left-side" id="contact">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="section-subheading-wrapper-all">
+                <h2 class="section-subheading">
+                  <span>Get in touch</span>
+                </h2>
+              </div>
+              <div class="divider-s"></div>
+              <h2 class="home-page-title-all">Contacts</h2>
+            </div>
+          </div>
+
+          <div class="divider-m"></div>
+          <div class="resumo_fn_partners">
+            <ul>
+              <li>
+                <a
+                  href="mailto:napatpon.tanmanee@mail.kmtt.ac.th"
+                  target="_blank"
+                  ><img src="img/socials/gmail.svg" alt="gmail"
+                /></a>
+              </li>
+              <li>
+                <a
+                  href="https://www.facebook.com/napatpon.tanmanee"
+                  target="_blank"
+                  ><img src="img/socials/facebook.svg" alt="face"
+                /></a>
+              </li>
+              <li>
+                <a href="http://line.me/ti/p/napatpon_tanmanee" target="_blank"
+                  ><img src="img/socials/line.svg" alt=""
+                /></a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="divider-l"></div>
+          <!-- Footer -->
+          <div class="footer">
+            <div class="footer-line"></div>
+            <div class="footer-content">
+              <div class="container">
+                <div class="row">
+                  <!-- <div class="col-lg-12"> -->
+                  <p>Copyright © 2021. All rights reserved.</p>
+                  <br />
+                  <p>Designed & Developed by Napatpon Tanmanee</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- pages end -->
+
+    <!-- photoSwipe background start -->
+    <div aria-hidden="true" class="pswp" role="dialog" tabindex="-1">
+      <div class="pswp__bg"></div>
+      <div class="pswp__scroll-wrap">
+        <div class="pswp__container">
+          <div class="pswp__item"></div>
+          <div class="pswp__item"></div>
+          <div class="pswp__item"></div>
+        </div>
+        <div class="pswp__ui pswp__ui--hidden">
+          <div class="pswp__top-bar">
+            <div class="pswp__counter"></div>
+            <button
+              class="pswp__button pswp__button--close"
+              title="Close (Esc)"
+            ></button>
+            <button
+              class="pswp__button pswp__button--share"
+              title="Share"
+            ></button>
+            <button
+              class="pswp__button pswp__button--fs"
+              title="Toggle fullscreen"
+            ></button>
+            <button
+              class="pswp__button pswp__button--zoom"
+              title="Zoom in/out"
+            ></button>
+            <div class="pswp__preloader">
+              <div class="pswp__preloader__icn">
+                <div class="pswp__preloader__cut">
+                  <div class="pswp__preloader__donut"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap"
+          >
+            <div class="pswp__share-tooltip"></div>
+          </div>
+          <button
+            class="pswp__button pswp__button--arrow--left"
+            title="Previous (arrow left)"
+          ></button>
+          <button
+            class="pswp__button pswp__button--arrow--right"
+            title="Next (arrow right)"
+          ></button>
+          <div class="pswp__caption">
+            <div class="pswp__caption__center"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- photoSwipe background end -->
+
+    <!-- To The TOP icon -->
+    <a class="page-scroll" href="#home">
+      <div class="to-top-arrow to-top-arrow">
+        <span class="ion-ios-arrow-up"></span>
+      </div>
+    </a>
+
+    <!-- Scripts-->
+    <!-- <script src="js/jquery.min.js"></script> -->
+    <script src="js/plugins.js"></script>
+
+    <!-- bootstrap -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Main script -->
+    <script src="js/runex.js" type="module"></script>
+
+    <!-- Owl carousel -->
+    <script src="js/owl.carousel.min.js"></script>
+
+    <!-- Parallax -->
+    <script src="js/jarallax.min.js" type="text/javascript"></script>
+
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- ionicons -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+
+    <!-- fire particles -->
+    <script src="js/particles.js"></script>
+    <script>
+      particlesJS.load("particles-js", "particles_main.json", function () {
+        console.log("callback - particles.js config loaded");
+      });
+    </script>
+    <script>
+      particlesJS.load("particles-snow", "particles-snow.json", function () {
+        console.log("callback - particles.js config loaded");
+      });
+    </script>
+
+    <!-- 3D model -->
+    <script
+      type="module"
+      src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"
+    ></script>
+
+    <!-- scripts end -->
+  </body>
+</html>

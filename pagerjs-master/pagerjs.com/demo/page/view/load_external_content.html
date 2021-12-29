@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+<div class="content">
+
+    <header class="jumbotron subhead">
+        <h1>Load External Content</h1>
+
+        <p class="lead">It is possible to extract parts of your page into external HTML files and load them into
+            your current page. Just use <code>source: 'someURL'</code>.
+            <br/>
+            You can register a callback on <code>sourceLoaded</code> that will be triggered after the content is loaded.
+            This can be useful for performing custom post-processing.
+        </p>
+    </header>
+
+        <pre data-bind="prettyprint: {}" class="prettyprint linenums">
+&lt;div data-bind="page: {
+      id: 'load_external_content',
+      sourceLoaded: externalContentLoaded,
+      source: 'load_external_content.html .content'}"&gt;
+    ...
+&lt;/div&gt;
+        </pre>
+
+    <pre data-bind="prettyprint: {}" class="prettyprint linenums">
+var externalContentLoaded = function(page) {
+    prettyPrint();
+};
+    </pre>
+
+    <div data-bind="template: {name: 'start-link-template'}"></div>
+</div>
+</body>
+</html>

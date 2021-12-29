@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>withOnShow should lazy bind a new view model to the page</title>
+    <script type="text/javascript" src="../lib/require.js"></script>
+
+    <link rel="stylesheet" href="../lib/qunit.css"/>
+</head>
+<body>
+
+<div id="qunit"></div>
+
+<div data-bind="page: {id: 'user', withOnShow: requireVM('testVM')}">
+    <div id="name" data-bind="text: name"></div>
+</div>
+
+
+<script type="text/javascript">
+
+    requirejs.config({
+        shims: {
+            hashchange: ['jquery']
+        },
+        paths: {
+            knockout: '../lib/knockout-2.3.0',
+            underscore: '../lib/lodash.min',
+            hashchange: '../lib/jquery.ba-hashchange.min',
+            jquery: '../lib/jquery-2.0.3.min',
+            'pager': '../pager'
+        }
+    });
+
+    requirejs(['knockout', 'pager', 'jquery', 'hashchange'], function(ko, pager, $) {
+
+        window.requireVM = function(module) {
+            return function (callback) {
+                require([module], function (mod) {
+                    callback(mod.getVM());
+                });
+            };
+        };
+
+        var viewModel = {};
+
+        window.$ = $;
+
+        pager.extendWithPage(viewModel);
+        ko.applyBindings(viewModel);
+        pager.start();
+    });
+
+</script>
+
+<script type="text/javascript" src="../lib/qunit-until.js"></script>
+<script type="text/javascript" src="../lib/qunit.js"></script>
+
+<script type="text/javascript">
+
+    asyncTest("lazy bind a new view model", function () {
+
+        until(function () {
+            var name = $('#name');
+            return name.text() === 'Karl V';
+        }, function () {
+            ok(true, "View model is lazy loaded");
+            start();
+        });
+
+        window.location.hash = '#user';
+
+    });
+</script>
+
+
+</body>
+</html>

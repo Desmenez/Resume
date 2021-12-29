@@ -1,0 +1,23 @@
+<header class="jumbotron subhead">
+    <h1>Path</h1>
+
+    <p class="lead">
+        Getting the full (absolute) path for a page can be done using <code>pager.Page.prototype.path</code>
+        or <code>pager.Page.prototype.path$</code>. The string can be an absolute or relative path.
+    </p>
+</header>
+
+
+<pre data-bind="prettyprint: {}" class="prettyprint linenums">
+// adminPath is a String
+var adminPath = somePage.find('admin');
+// loginPath is an Observable(String). Useful in bindings.
+var loginPath = somePage.find$('../user/login');
+</pre>
+
+<div class="form-actions">
+    <div class="pull-right">
+        <a class="btn btn-large btn-primary" href="#!/view/fx">Back to FX</a>
+        <a class="btn btn-large" data-bind="page-step: 1">Read about {0}</a>
+    </div>
+</div>

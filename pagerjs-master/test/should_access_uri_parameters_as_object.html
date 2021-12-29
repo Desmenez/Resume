@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Should access URI parameters as object</title>
+    <script type="text/javascript" src="../lib/jquery-2.0.3.min.js"></script>
+    <script type="text/javascript" src="../lib/underscore-min.js"></script>
+    <script type="text/javascript" src="../lib/knockout-3.0.0.js"></script>
+    <script type="text/javascript" src="../lib/jquery.ba-hashchange.min.js"></script>
+    <script type="text/javascript" src="../pager.js"></script>
+
+    <link rel="stylesheet" href="../lib/qunit.css"/>
+</head>
+<body>
+
+<div id="qunit"></div>
+
+<div data-bind="page: {id: 'first', params: {'nam': ko.observable(11),'ans': ko.observable(42), foo: bar, test: null}}">
+    <div id="answer" data-bind="text: ans"></div>
+    <div id="name" data-bind="text: nam"></div>
+    <div id="foo" data-bind="text: foo"></div>
+    <div id="test" data-bind="text: test"></div>
+</div>
+
+<script type="text/javascript">
+
+
+    var viewModel = {
+        bar:ko.observable("Pelle")
+    };
+
+    pager.extendWithPage(viewModel);
+    ko.applyBindings(viewModel);
+
+    pager.start();
+</script>
+
+<script type="text/javascript" src="../lib/qunit-until.js"></script>
+<script type="text/javascript" src="../lib/qunit.js"></script>
+
+<script type="text/javascript">
+
+    asyncTest("Should access URI parameters as object", function () {
+
+        window.location.hash = '#first?nam=foobar&test=43';
+        until(function () {
+            return $('#name').text() === 'foobar'
+        }, function () {
+            ok(true, "answer and name is set");
+            assert.equal($('#answer').text(), '42');
+            assert.equal($('#name').text(), 'foobar');
+            assert.equal($('#foo').text(), 'Pelle');
+            assert.equal($('#test').text(), '43');
+            start();
+        });
+
+
+    });
+</script>
+
+
+</body>
+</html>
