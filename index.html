@@ -99,11 +99,6 @@
 
     <!-- RightSide Images -->
     <div class="right-side">
-      <!-- <div class="container">
-        <img class="png-img" alt="png-main" src="img/background/Tony.png" />
-        <div class="copyright-home">P<br />R<br />E</div>
-        \
-      </div> -->
       <!-- Section Home Video BG -->
       <div class="home-img-container overlay overlay-dark-60">
         <div class="slide-img">
@@ -111,6 +106,7 @@
           <!-- <img class="png-img" alt="png-main" src="img/background/Tony.png" /> -->
           <div id="particles-js"></div>
           <video
+            id="videoContainment"
             alt="Main BG"
             src="img/video_home.mp4"
             loop
@@ -145,7 +141,7 @@
       <div class="news-img-container mobile overlay overlay-dark-60">
         <div class="slide-img">
           <!-- 3D Model -->
-          <div id="particles-snow"></div>
+          <!-- <div id="particles-snow"></div> -->
           <model-viewer
             id="model-viewer"
             bounds="tight"
@@ -284,7 +280,7 @@
               </table>
             </div>
             <div class="divider-s"></div>
-            <form method="get" action="/untitled.blend" data-aos="fade-up">
+            <form method="get" action="/napatpon-resume.pdf" data-aos="fade-up">
               <button type="submit" class="btn btn-cv">
                 <ion-icon name="download-outline"></ion-icon>DOWNLOAD RESUME
               </button>
@@ -758,8 +754,7 @@
                       <div class="news-info-title">Adisorn Game</div>
                       <div class="divider-s"></div>
                       <div class="news-info-des">
-                        Coding and design turn-base RPG game project using
-                        Unity.
+                        Coding and design turn-base RPG game project Unity.
                       </div>
                     </div>
                   </div>
@@ -893,7 +888,7 @@
 
       <!-- Image RightSide Mobile -->
       <div class="fireOT-right overlay overlay-dark-60 jarallax" data-jarallax>
-        <div id="particles-snow"></div>
+        <!-- <div id="particles-snow"></div> -->
         <model-viewer
           id="model-viewer"
           bounds="tight"
@@ -1092,11 +1087,11 @@
         console.log("callback - particles.js config loaded");
       });
     </script>
-    <script>
+    <!-- <script>
       particlesJS.load("particles-snow", "particles-snow.json", function () {
         console.log("callback - particles.js config loaded");
       });
-    </script>
+    </script> -->
 
     <!-- 3D model -->
     <script
