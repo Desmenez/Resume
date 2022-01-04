@@ -3887,6 +3887,7 @@ PORTFOLIO Images
     rgba(255, 255, 255, 0) 100%
   );
   opacity: 1;
+  border-radius: 10px;
 }
 
 .news-info-des {
@@ -3897,6 +3898,9 @@ PORTFOLIO Images
 @media only screen and (max-width: 880px) {
   .news-item-inner {
     bottom: 0;
+  }
+  .news-info-des {
+    opacity: 1;
   }
 }
 
