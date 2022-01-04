@@ -1,11 +1,15 @@
 ﻿<!DOCTYPE html>
-<html lang="eng">
+<html lang="en">
   <head>
     <meta charset="utf-8" />
     <title>Resume | Napatpon</title>
     <meta
-      content="width=device-width, initial-scale=1, maximum-scale=1"
+      content="width=device-width, initial-scale=1, maximum-scale=5"
       name="viewport"
+    />
+    <meta
+      name="description"
+      content="This is Napatpon Tanmanee Resume Website"
     />
     <!-- style start -->
     <!-- <link href="css/plugins.css" media="all" rel="stylesheet" type="text/css" /> -->
@@ -85,18 +89,25 @@
       <div class="social-icons-home-wrapper">
         <ul class="social-icons-home">
           <li class="social-icon">
-            <a href="mailto:napatpon.tanmanee@mail.kmtt.ac.th" target="_blank"
+            <a
+              href="mailto:napatpon.tanmanee@mail.kmtt.ac.th"
+              target="_blank"
+              rel="noopener"
               ><ion-icon name="logo-google"></ion-icon
             ></a>
           </li>
           <li class="social-icon">
-            <a href="https://www.facebook.com/napatpon.tanmanee" target="_blank"
+            <a
+              href="https://www.facebook.com/napatpon.tanmanee"
+              target="_blank"
+              rel="noopener"
               ><ion-icon name="logo-facebook"></ion-icon
             ></a>
           </li>
           <li class="social-icon">
             <a
               href="https://www.youtube.com/channel/UCJ0K-8uZelz3l7m8FHOqGDA"
+              rel="noopener"
               target="_blank"
               ><ion-icon name="logo-youtube"></ion-icon
             ></a>
@@ -108,19 +119,26 @@
     <!-- RightSide Images -->
     <div class="right-side">
       <!-- Section Home Video BG -->
-      <div class="home-img-container overlay overlay-dark-60">
+      <div class="home-img-container">
         <div class="slide-img">
-          <!-- <img alt="Main BG" src="img/background/SINGLE-bg.jpg" /> -->
-          <!-- <img class="png-img" alt="png-main" src="img/background/Tony.png" /> -->
-          <div id="particles-js"></div>
-          <video
-            id="videoContainment"
-            alt="Main BG"
-            src="img/video_home.mp4"
-            loop
-            muted
-            autoplay
-          ></video>
+          <!-- <div id="particles-js"></div> -->
+          <div class="me-textmain">
+            <marquee behavior="scroll" direction="UP">P</br>R</br>E</marquee>
+          </div>
+          <div class="me-main">
+            <img id="me-img" alt="Me Img" />
+          </div>
+          <div class="me-vdomain">
+            <video
+              id="videoContainment"
+              alt="Main BG"
+              src="img/video_home.mp4"
+              center
+              loop
+              muted
+              autoplay
+            ></video>
+          </div>
         </div>
       </div>
 
@@ -154,8 +172,6 @@
             id="model-viewer"
             bounds="tight"
             src="model/ChristmasBall.glb"
-            ar
-            ar-modes="webxr scene-viewer quick-look"
             camera-controls
             shadow-intensity="1"
             exposure="2"
@@ -840,6 +856,7 @@
                 <div class="news-item">
                   <a
                     href="https://sketchfab.com/3d-models/pinocchio-and-memory-inside-the-bubble-d834208cb6b24e87975b985729d4fa63"
+                    rel="noopener"
                     target="_blank"
                   >
                     <div class="news-bg-wrapper port-bg-6">
@@ -865,6 +882,8 @@
                 <div class="news-item">
                   <a
                     href="https://www.youtube.com/watch?v=8ozLMKDbZ-k&ab_channel=EMPTYAnimeto"
+                    rel="noopener"
+                    target="_blank"
                   >
                     <div class="news-bg-wrapper port-bg-7">
                       <div class="news-item-inner">
@@ -900,8 +919,6 @@
           id="model-viewer"
           bounds="tight"
           src="model/ChristmasBall.glb"
-          ar
-          ar-modes="webxr scene-viewer quick-look"
           camera-controls
           shadow-intensity="1"
           exposure="2"
@@ -953,6 +970,7 @@
               <li>
                 <a
                   href="mailto:napatpon.tanmanee@mail.kmtt.ac.th"
+                  rel="noopener"
                   target="_blank"
                   ><img src="img/socials/gmail.svg" alt="gmail"
                 /></a>
@@ -960,12 +978,16 @@
               <li>
                 <a
                   href="https://www.facebook.com/napatpon.tanmanee"
+                  rel="noopener"
                   target="_blank"
                   ><img src="img/socials/facebook.svg" alt="face"
                 /></a>
               </li>
               <li>
-                <a href="http://line.me/ti/p/napatpon_tanmanee" target="_blank"
+                <a
+                  href="http://line.me/ti/p/napatpon_tanmanee"
+                  rel="noopener"
+                  target="_blank"
                   ><img src="img/socials/line.svg" alt=""
                 /></a>
               </li>
@@ -1087,12 +1109,12 @@
     ></script>
 
     <!-- fire particles -->
-    <script src="js/particles.js"></script>
+    <!-- <script src="js/particles.js"></script>
     <script>
       particlesJS.load("particles-js", "particles_main.json", function () {
         console.log("callback - particles.js config loaded");
       });
-    </script>
+    </script> -->
     <!-- <script>
       particlesJS.load("particles-snow", "particles-snow.json", function () {
         console.log("callback - particles.js config loaded");

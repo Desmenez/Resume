@@ -100,7 +100,7 @@ $(function () {
   });
 
   // 6. YouTube player
-  $("#bgndVideo").YTPlayer();
+  // $("#bgndVideo").YTPlayer();
 
   // 7. typed text
   $(".typed-title").typed({
@@ -397,3 +397,14 @@ $(function () {
 
   //Parallax
 });
+
+// Random images
+let me_image = [
+  "img/me/me1.webp",
+  "img/me/me2.webp",
+  "img/me/me3.webp",
+  "img/me/me4.webp",
+  "img/me/me5.webp",
+];
+let rand_img = Math.floor(5 * Math.random());
+document.getElementById("me-img").src = me_image[rand_img];
