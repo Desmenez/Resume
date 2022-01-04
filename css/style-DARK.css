@@ -3446,7 +3446,7 @@ button.button-all {
   font-family: "Teko", sans-serif;
   text-transform: uppercase;
   color: transparent;
-  -webkit-text-stroke: 1vh white;
+  -webkit-text-stroke: 1vw white;
   font-weight: bold;
   font-size: 600px;
   line-height: 400px;
@@ -3482,6 +3482,7 @@ button.button-all {
   }
 
   .slide-img .me-textmain marquee {
+    -webkit-text-stroke: 2vw white;
     font-size: 80vw;
     line-height: 53vw;
   }
