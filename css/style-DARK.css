@@ -865,6 +865,11 @@ p.cd-timeline-date {
   box-shadow: 0 0 10px rgba(95, 95, 95, 0.35);
 }
 
+.timeline-image img {
+  width: 100%;
+  height: 100%;
+}
+
 .timeline > li.timeline-inverted > .timeline-panel {
   float: right;
   padding: 0 20px 25px 100px;
@@ -4797,12 +4802,14 @@ model-viewer {
 .resumo_fn_partners li:nth-child(3) a:hover {
   background-color: #00c300;
 }
-.resumo_fn_partners img {
-  max-width: 50%;
+.resumo_fn_partners ul li a img {
+  width: 50%;
+  height: 50%;
   transition: all 0.2s ease-in-out;
 }
-.resumo_fn_partners img:hover {
-  max-width: 60%;
+.resumo_fn_partners ul li a:hover img {
+  width: 60%;
+  height: 60%;
   color: font;
 }
 
