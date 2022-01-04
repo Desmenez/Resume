@@ -18,7 +18,7 @@
     <!-- Animate on scoll -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <!-- Social Icons -->
-    <link href="css/ionicons.min.css" rel="stylesheet" type="text/css" />
+    <!-- <link href="css/ionicons.min.css" rel="stylesheet" type="text/css" /> -->
     <!-- Photoswipe -->
     <link href="css/photoswipe.css" rel="stylesheet" type="text/css" />
     <!-- Litty -->
@@ -123,7 +123,7 @@
         <div class="slide-img">
           <!-- <div id="particles-js"></div> -->
           <div class="me-textmain">
-            <marquee behavior="scroll" direction="UP">P</br>R</br>E</marquee>
+            <marquee behavior="scroll" direction="UP">P<br />R<br />E</marquee>
           </div>
           <div class="me-main">
             <img id="me-img" alt="Me Img" />
@@ -506,7 +506,7 @@
                           aria-controls="collapseOne"
                           class="collapsed"
                         >
-                          <i class="ion ion-plus" data-aos="fade-up"></i>
+                          <button class="ui-plus" data-aos="fade-up"></button>
                           <span class="panel-title" data-aos="fade-up">
                             Programming Languages
                           </span>
@@ -584,7 +584,7 @@
                           aria-controls="collapseTwo"
                           class="collapsed"
                         >
-                          <i class="ion ion-plus" data-aos="fade-up"></i>
+                          <button class="ui-plus" data-aos="fade-up"></button>
                           <span class="panel-title" data-aos="fade-up">
                             Softwares
                           </span>
@@ -676,7 +676,7 @@
                           aria-controls="collapseThree"
                           class="collapsed"
                         >
-                          <i class="ion ion-plus" data-aos="fade-up"></i>
+                          <button class="ui-plus" data-aos="fade-up"></button>
                           <span class="panel-title" data-aos="fade-up">
                             Libraries
                           </span>
@@ -1012,7 +1012,6 @@
         </div>
       </div>
     </section>
-
     <!-- pages end -->
 
     <!-- photoSwipe background start -->
@@ -1075,7 +1074,10 @@
     <!-- To The TOP icon -->
     <a class="page-scroll" href="#home">
       <div class="to-top-arrow to-top-arrow">
-        <span class="ion-ios-arrow-up"></span>
+        <ion-icon
+          style="font-size: 20px; padding-top: 12px"
+          name="chevron-up-outline"
+        ></ion-icon>
       </div>
     </a>
 
@@ -1107,19 +1109,6 @@
       nomodule
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
     ></script>
-
-    <!-- fire particles -->
-    <!-- <script src="js/particles.js"></script>
-    <script>
-      particlesJS.load("particles-js", "particles_main.json", function () {
-        console.log("callback - particles.js config loaded");
-      });
-    </script> -->
-    <!-- <script>
-      particlesJS.load("particles-snow", "particles-snow.json", function () {
-        console.log("callback - particles.js config loaded");
-      });
-    </script> -->
 
     <!-- 3D model -->
     <script
