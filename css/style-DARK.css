@@ -558,19 +558,19 @@ Social icons
   }
 }
 
-.social-icons-home-wrapper ul {
+.social-icons-home-wrapper social-icons-home {
   margin: 0 auto;
   padding: 0;
   list-style-type: none;
 }
 
-.social-icons-home-wrapper ul li {
+.social-icons-home-wrapper social-icons-home li {
   display: inline-block;
   margin: 0 auto;
   padding: 0 20px 0 0;
 }
 
-ul.social-icons-home {
+.social-icons-home {
   font-size: 20px;
   line-height: 1;
   margin: 0;
@@ -579,12 +579,16 @@ ul.social-icons-home {
 }
 
 @media only screen and (max-width: 768px) {
-  ul.social-icons-home {
+  .social-icons-home {
     font-size: 18px;
   }
 }
 
-ul.social-icons-home a {
+.social-icon {
+  padding-right: 42px;
+}
+
+.social-icons-home a {
   padding: 0;
   color: #fff;
   text-decoration: none;
@@ -593,12 +597,12 @@ ul.social-icons-home a {
 }
 
 @media only screen and (max-width: 880px) {
-  ul.social-icons-home a {
+  .social-icons-home a {
     color: #fff;
   }
 }
 
-ul.social-icons-home a:hover {
+.social-icons-home a:hover {
   padding: 0;
   color: #a72714;
   text-decoration: none;
@@ -607,7 +611,7 @@ ul.social-icons-home a:hover {
 }
 
 @media only screen and (max-width: 880px) {
-  ul.social-icons-home a:hover {
+  .social-icons-home a:hover {
     color: #fff;
   }
 }
@@ -730,7 +734,7 @@ h3.cd-timeline-name {
   line-height: 0;
 }
 
-h4.cd-timeline-date {
+p.cd-timeline-date {
   position: relative;
   font-family: "Albertus nova", sans-serif;
   font-size: 12px;
@@ -1005,18 +1009,18 @@ Skills Section
   margin: 0;
 }
 
-.panel-title a i {
+/* .panel-title a i {
   font-size: 20px;
   margin-right: 1vw;
-}
+} */
 
 @media only screen and (max-width: 880px) {
   .panel-title {
     font-size: 15px;
   }
-  .panel-title a i {
+  /* .panel-title a i {
     font-size: 15px;
-  }
+  } */
 }
 
 .panel-group .panel {
@@ -1035,7 +1039,7 @@ Skills Section
   background: none;
 }
 
-.panel-group .panel .panel-heading h4 a {
+.panel-group .panel .panel-heading p a {
   display: block;
   background: none;
   /* padding: 15px; */
@@ -1046,8 +1050,8 @@ Skills Section
   transition: 0.15s all ease-in-out;
 }
 
-.panel-group .panel .panel-heading h4 a:hover,
-.panel-group .panel .panel-heading h4 a:not(.collapsed) {
+.panel-group .panel .panel-heading p a:hover,
+.panel-group .panel .panel-heading p a:not(.collapsed) {
   background: none;
   -webkit-transition: 0.15s all ease-in-out;
   -moz-transition: 0.15s all ease-in-out;
@@ -1086,7 +1090,7 @@ Skills Section
   transform: rotate(-180deg);
 }
 
-.panel-group .panel .panel-heading h4 a:not(.collapsed) .ui-plus:before {
+.panel-group .panel .panel-heading p a:not(.collapsed) .ui-plus:before {
   transform: rotate(0deg);
 }
 
@@ -4341,7 +4345,7 @@ h6.contact {
 }
 
 /* 43. Lity CUSTOM */
-.lity {
+/* .lity {
   z-index: 99999;
   cursor: crosshair;
   background: rgba(0, 0, 0, 0.55);
@@ -4378,7 +4382,7 @@ h6.contact {
 .lity-close:active,
 .lity-close:visited {
   text-shadow: none;
-}
+} */
 
 /* 44. PhotoSwipe CUSTOM */
 .pswp__bg {
@@ -4642,6 +4646,7 @@ h6.contact {
   font-family: "Alegreya", serif;
   font-weight: 700;
   color: #888;
+  border-width: 3px;
   border-color: #888;
   padding: 30px 0;
   width: 100%;
@@ -4650,9 +4655,9 @@ h6.contact {
 }
 
 .btn-cv:hover {
-  background-color: #a72714;
-  color: #111;
+  color: #fff;
   border-color: #a72714;
+  transform: translateY(-5px);
 }
 
 .btn-cv ion-icon {
