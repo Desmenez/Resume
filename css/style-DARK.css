@@ -521,13 +521,13 @@ h2.section-heading {
   height: 35px;
   top: 55px;
   left: 55px;
-  background: url(../favicon/favicon-32x32.png) no-repeat;
+  background: url(../favicon/favicon-32x32.webp) no-repeat;
   z-index: 98;
 }
 
 @media only screen and (max-width: 880px) {
   .logo {
-    background: url(../favicon/favicon-32x32.png) no-repeat;
+    background: url(../favicon/favicon-32x32.webp) no-repeat;
   }
 }
 
