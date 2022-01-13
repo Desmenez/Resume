@@ -1,11 +1,5 @@
 /*
-  [JS Index]
-  
-  ---
-  
-  Template Name: Runex - One Page Portfolio Template
-  Author:  ex-nihilo
-  Version: 1.0
+  Main Javascript
 */
 
 /*
@@ -16,10 +10,9 @@
   3. slick slider
   4. navigation
   5. animate elements
-  6. YouTube player
-  7. typed text
-  8. owl carousel
-  9. form
+  6. typed text
+  7. owl carousel
+  8. AOS
 */
 
 $(function () {
@@ -99,10 +92,7 @@ $(function () {
     }
   });
 
-  // 6. YouTube player
-  // $("#bgndVideo").YTPlayer();
-
-  // 7. typed text
+  // 6. typed text
   $(".typed-title").typed({
     strings: ["Front-end developer", "2d/3d Animator", "3d Modeler"],
     typeSpeed: 40,
@@ -110,7 +100,7 @@ $(function () {
     loop: true,
   });
 
-  // 8. owl carousel
+  // 7. owl carousel
   $("#owl-carousel-team").owlCarousel({
     loop: false,
     center: false,
@@ -347,55 +337,53 @@ $(function () {
     },
   });
 
-  // 9. form
-  $("form#form").on("submit", function () {
-    $("form#form .error").remove();
-    var s = !1;
-    if (
-      ($(".requiredField").each(function () {
-        if ("" === jQuery.trim($(this).val()))
-          $(this).prev("label").text(),
-            $(this)
-              .parent()
-              .append('<span class="error">This field is required</span>'),
-            $(this).addClass("inputError"),
-            (s = !0);
-        else if ($(this).hasClass("email")) {
-          var r = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
-          r.test(jQuery.trim($(this).val())) ||
-            ($(this).prev("label").text(),
-            $(this)
-              .parent()
-              .append('<span class="error">Invalid email address</span>'),
-            $(this).addClass("inputError"),
-            (s = !0));
-        }
-      }),
-      !s)
-    ) {
-      $("form#form input.submit").fadeOut("normal", function () {
-        $(this).parent().append("");
-      });
-      var r = $(this).serialize();
-      $.post($(this).attr("action"), r, function () {
-        $("form#form").slideUp("fast", function () {
-          $(this).before(
-            '<div class="success">Your email was sent successfully.</div>'
-          );
-        });
-      });
-    }
-    return !1;
-  });
+  // 8. form
+  // $("form#form").on("submit", function () {
+  //   $("form#form .error").remove();
+  //   var s = !1;
+  //   if (
+  //     ($(".requiredField").each(function () {
+  //       if ("" === jQuery.trim($(this).val()))
+  //         $(this).prev("label").text(),
+  //           $(this)
+  //             .parent()
+  //             .append('<span class="error">This field is required</span>'),
+  //           $(this).addClass("inputError"),
+  //           (s = !0);
+  //       else if ($(this).hasClass("email")) {
+  //         var r = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
+  //         r.test(jQuery.trim($(this).val())) ||
+  //           ($(this).prev("label").text(),
+  //           $(this)
+  //             .parent()
+  //             .append('<span class="error">Invalid email address</span>'),
+  //           $(this).addClass("inputError"),
+  //           (s = !0));
+  //       }
+  //     }),
+  //     !s)
+  //   ) {
+  //     $("form#form input.submit").fadeOut("normal", function () {
+  //       $(this).parent().append("");
+  //     });
+  //     var r = $(this).serialize();
+  //     $.post($(this).attr("action"), r, function () {
+  //       $("form#form").slideUp("fast", function () {
+  //         $(this).before(
+  //           '<div class="success">Your email was sent successfully.</div>'
+  //         );
+  //       });
+  //     });
+  //   }
+  //   return !1;
+  // });
 
-  //AOS
+  // 8. AOS
   AOS.init({
     duration: 700,
     easing: "linear",
     mirror: true,
   });
-
-  //Parallax
 });
 
 // Random images
