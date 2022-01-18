@@ -2875,6 +2875,10 @@ PORTFOLIO Images
   background-image: url(../img/portfolio/EMPTY.webp);
 }
 
+.port-bg-8 {
+  background-image: url(../img/portfolio/React.webp);
+}
+
 .news-item-inner {
   position: absolute;
   width: 100%;
