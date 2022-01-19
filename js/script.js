@@ -8,11 +8,11 @@
     2.1. page loaded
     2.2. page ready
   3. slick slider
-  4. navigation
-  5. animate elements
-  6. typed text
-  7. owl carousel
-  8. AOS
+  4. to top
+  5. typed text
+  6. owl carousel
+  7. AOS
+  8. Random images
 */
 
 $(function () {
@@ -59,29 +59,7 @@ $(function () {
     });
   });
 
-  // 4. navigation
-  $(".page-scroll").on("click", function (e) {
-    var $anchor = $(this);
-    $("html, body")
-      .stop()
-      .animate(
-        {
-          scrollTop: $($anchor.attr("href")).offset().top - 0,
-        },
-        1500,
-        "easeInOutExpo"
-      );
-    e.preventDefault();
-  });
-  $(".navigation-fire, nav.navigation-menu a").on("click", function () {
-    if ($("nav.navigation-menu").hasClass("show")) {
-      $("nav.navigation-menu").removeClass("show");
-    } else {
-      $("nav.navigation-menu").addClass("show");
-    }
-  });
-
-  // 5. animate elements
+  // 4. to top
   $(window).on("scroll", function () {
     if ($(this).scrollTop() > 300) {
       $(".to-top-arrow").addClass("show");
@@ -92,7 +70,7 @@ $(function () {
     }
   });
 
-  // 6. typed text
+  // 5. typed text
   $(".typed-title").typed({
     strings: ["Front-end developer", "2d/3d Animator", "3d Modeler"],
     typeSpeed: 40,
@@ -100,77 +78,7 @@ $(function () {
     loop: true,
   });
 
-  // 7. owl carousel
-  $("#owl-carousel-team").owlCarousel({
-    loop: false,
-    center: false,
-    autoplay: false,
-    autoplaySpeed: 1000,
-    autoplayTimeout: 5000,
-    smartSpeed: 450,
-    nav: false,
-    nav: true,
-    navText: [
-      "<i class='ion-chevron-left'></i>",
-      "<i class='ion-chevron-right'></i>",
-    ],
-    navContainer: ".owl-nav-custom-team",
-    responsive: {
-      0: {
-        items: 1,
-        margin: 25,
-      },
-      768: {
-        items: 1,
-        margin: 50,
-      },
-      980: {
-        items: 1,
-        margin: 50,
-      },
-      1240: {
-        items: 2,
-        margin: 50,
-      },
-      2560: {
-        items: 3,
-        margin: 50,
-      },
-    },
-  });
-  $("#owl-carousel-works").owlCarousel({
-    loop: false,
-    center: false,
-    autoplay: false,
-    autoplaySpeed: 1000,
-    autoplayTimeout: 5000,
-    smartSpeed: 450,
-    nav: false,
-    nav: true,
-    navText: [
-      "<i class='ion-chevron-left'></i>",
-      "<i class='ion-chevron-right'></i>",
-    ],
-    navContainer: ".owl-nav-custom-works",
-    responsive: {
-      0: {
-        items: 1,
-        margin: 25,
-      },
-      768: {
-        items: 1,
-        margin: 50,
-      },
-      980: {
-        items: 1,
-        margin: 50,
-      },
-      1240: {
-        items: 2,
-        margin: 50,
-      },
-    },
-  });
+  // 6. owl carousel
   $("#owl-carousel-news").owlCarousel({
     loop: true,
     center: false,
@@ -204,181 +112,8 @@ $(function () {
       },
     },
   });
-  $("#owl-carousel-news-1").owlCarousel({
-    loop: false,
-    center: false,
-    autoplay: false,
-    autoplaySpeed: 1000,
-    autoplayTimeout: 5000,
-    smartSpeed: 450,
-    nav: false,
-    nav: true,
-    navText: [
-      "<i class='ion-chevron-left'></i>",
-      "<i class='ion-chevron-right'></i>",
-    ],
-    navContainer: ".owl-nav-custom-news-all.owl-nav-custom-news-1",
-    responsive: {
-      0: {
-        items: 1,
-        margin: 25,
-      },
-      768: {
-        items: 1,
-        margin: 50,
-      },
-      980: {
-        items: 1,
-        margin: 50,
-      },
-      1240: {
-        items: 2,
-        margin: 50,
-      },
-    },
-  });
-  $("#owl-carousel-news-2").owlCarousel({
-    loop: false,
-    center: false,
-    autoplay: false,
-    autoplaySpeed: 1000,
-    autoplayTimeout: 5000,
-    smartSpeed: 450,
-    nav: false,
-    nav: true,
-    navText: [
-      "<i class='ion-chevron-left'></i>",
-      "<i class='ion-chevron-right'></i>",
-    ],
-    navContainer: ".owl-nav-custom-news-all.owl-nav-custom-news-2",
-    responsive: {
-      0: {
-        items: 1,
-        margin: 25,
-      },
-      768: {
-        items: 1,
-        margin: 50,
-      },
-      980: {
-        items: 1,
-        margin: 50,
-      },
-      1240: {
-        items: 2,
-        margin: 50,
-      },
-    },
-  });
-  $("#owl-carousel-news-3").owlCarousel({
-    loop: false,
-    center: false,
-    autoplay: false,
-    autoplaySpeed: 1000,
-    autoplayTimeout: 5000,
-    smartSpeed: 450,
-    nav: false,
-    nav: true,
-    navText: [
-      "<i class='ion-chevron-left'></i>",
-      "<i class='ion-chevron-right'></i>",
-    ],
-    navContainer: ".owl-nav-custom-news-all.owl-nav-custom-news-3",
-    responsive: {
-      0: {
-        items: 1,
-        margin: 25,
-      },
-      768: {
-        items: 1,
-        margin: 50,
-      },
-      980: {
-        items: 1,
-        margin: 50,
-      },
-      1240: {
-        items: 2,
-        margin: 50,
-      },
-    },
-  });
-  $("#owl-carousel-news-4").owlCarousel({
-    loop: false,
-    center: false,
-    autoplay: false,
-    autoplaySpeed: 1000,
-    autoplayTimeout: 5000,
-    smartSpeed: 450,
-    nav: false,
-    nav: true,
-    navText: [
-      "<i class='ion-chevron-left'></i>",
-      "<i class='ion-chevron-right'></i>",
-    ],
-    navContainer: ".owl-nav-custom-news-all.owl-nav-custom-news-4",
-    responsive: {
-      0: {
-        items: 1,
-        margin: 25,
-      },
-      768: {
-        items: 1,
-        margin: 50,
-      },
-      980: {
-        items: 1,
-        margin: 50,
-      },
-      1240: {
-        items: 2,
-        margin: 50,
-      },
-    },
-  });
 
-  // 8. form
-  // $("form#form").on("submit", function () {
-  //   $("form#form .error").remove();
-  //   var s = !1;
-  //   if (
-  //     ($(".requiredField").each(function () {
-  //       if ("" === jQuery.trim($(this).val()))
-  //         $(this).prev("label").text(),
-  //           $(this)
-  //             .parent()
-  //             .append('<span class="error">This field is required</span>'),
-  //           $(this).addClass("inputError"),
-  //           (s = !0);
-  //       else if ($(this).hasClass("email")) {
-  //         var r = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
-  //         r.test(jQuery.trim($(this).val())) ||
-  //           ($(this).prev("label").text(),
-  //           $(this)
-  //             .parent()
-  //             .append('<span class="error">Invalid email address</span>'),
-  //           $(this).addClass("inputError"),
-  //           (s = !0));
-  //       }
-  //     }),
-  //     !s)
-  //   ) {
-  //     $("form#form input.submit").fadeOut("normal", function () {
-  //       $(this).parent().append("");
-  //     });
-  //     var r = $(this).serialize();
-  //     $.post($(this).attr("action"), r, function () {
-  //       $("form#form").slideUp("fast", function () {
-  //         $(this).before(
-  //           '<div class="success">Your email was sent successfully.</div>'
-  //         );
-  //       });
-  //     });
-  //   }
-  //   return !1;
-  // });
-
-  // 8. AOS
+  // 7. AOS
   AOS.init({
     duration: 700,
     easing: "linear",
@@ -386,7 +121,7 @@ $(function () {
   });
 });
 
-// Random images
+// 8. Random images
 let me_image = [
   "img/me/me1.webp",
   "img/me/me2.webp",
