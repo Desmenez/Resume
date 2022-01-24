@@ -157,27 +157,18 @@
           <model-viewer
             id="model-viewer"
             bounds="tight"
-            src="model/ChristmasBall.glb"
+            src="model/Spiderman.glb"
+            ar
+            ar-modes="webxr scene-viewer quick-look"
             camera-controls
-            shadow-intensity="1"
-            exposure="2"
             environment-image="kloppenheim_02_1k.hdr"
-            auto-rotate
-            alt="christmasball"
+            poster="poster.webp"
+            shadow-intensity="0.5"
+            exposure="1"
+            shadow-softness="1"
+            alt="spiderman"
             loading="lazy"
           >
-            <button
-              class="Hotspot btn btn-dark"
-              slot="hotspot-2"
-              data-position="0.027310902706243884m 1.7600382160513242m 12.099479309551171m"
-              data-normal="0m 0.4878092709917905m 0.8729502363448092m"
-              data-visibility-attribute="visible"
-            >
-              <div class="HotspotAnnotation font-albertus">Merry Christmas</div>
-            </button>
-            <div class="progress-bar hide" slot="progress-bar">
-              <div class="update-bar"></div>
-            </div>
           </model-viewer>
           <img
             alt="BG Img"
@@ -916,7 +907,7 @@
       <!-- Image RightSide Mobile -->
       <div class="fireOT-right overlay overlay-dark-60 jarallax" data-jarallax>
         <!-- <div id="particles-snow"></div> -->
-        <model-viewer
+        <!-- <model-viewer
           id="model-viewer"
           bounds="tight"
           src="model/ChristmasBall.glb"
@@ -940,6 +931,22 @@
           <div class="progress-bar hide" slot="progress-bar">
             <div class="update-bar"></div>
           </div>
+        </model-viewer> -->
+        <model-viewer
+          id="model-viewer"
+          bounds="tight"
+          src="model/Spiderman.glb"
+          ar
+          ar-modes="webxr scene-viewer quick-look"
+          camera-controls
+          environment-image="kloppenheim_02_1k.hdr"
+          poster="poster.webp"
+          shadow-intensity="0.5"
+          exposure="1"
+          shadow-softness="1"
+          alt="spiderman"
+          loading="lazy"
+        >
         </model-viewer>
         <img
           class="jarallax-img"
